@@ -55,12 +55,10 @@ body {
     }
 
     #container #footer {
-        position: fixed;
         height: 30px;
         width: inherit;
         bottom: 0px;
         text-align: center;
-
     }
 
 .page_right {

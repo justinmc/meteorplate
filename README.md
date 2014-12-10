@@ -33,13 +33,13 @@ This is a fork from an older project [Meteor Boilerplate](https://github.com/jus
 
 ## Features
 
-*Iron Router* gives the project fully featured routing for a paged app.
+**Iron Router** gives the project fully featured routing for a paged app.
 
-*Sub-templates* render things like the page structure and navbar reactively, while routing handles the main page content.
+**Sub-templates** render things like the page structure and navbar reactively, while routing handles the main page content.
 
-*Permissions with Meteor's account system* is set up and reactive, so internal pages can be hidden from users that aren't logged in, and user data can be rendered in the page structure.
+**Permissions with Meteor's account system** is set up and reactive, so internal pages can be hidden from users that aren't logged in, and user data can be rendered in the page structure.
 
-All of these features are demostrated in the demo, so check it out live at <a href="http://meteorplate.meteor.com/">meteorplate.meteor.com</a> or dive into the code to see how it all works.
+All of these features are demostrated in the app itself, so check it out live at <a href="http://meteorplate.meteor.com/">meteorplate.meteor.com</a> or dive into the code to see how it all works.
 
 ### Google Analytics
 

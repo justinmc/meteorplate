@@ -8,11 +8,6 @@
     template: null
 
     initialize: () ->
-        Template.home.events =
-            # Prevent the page reloading for links
-            "click a": (e) ->
-                App.router.aReplace(e)
-
         @template = Meteor.render () ->
             return Template.home()
 

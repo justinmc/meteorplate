@@ -10,10 +10,6 @@ Meteor.startup ->
     Session.setDefault('carsCoolness', null)
 
     Template.cars.events =
-        # Prevent the page reloading for links
-        "click a": (e) ->
-            App.router.aReplace(e)
-
         'submit .form-car': (event, template) ->
             event.preventDefault()
             make = Session.get('carsMake')

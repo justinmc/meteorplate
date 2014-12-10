@@ -13,10 +13,6 @@ Meteor.startup ->
         return if templateData then templateData.id else ''
 
     Template.carsDetail.events =
-        # Prevent the page reloading for links
-        "click a": (e) ->
-            App.router.aReplace(e)
-
         'submit .form-description': (event, template) ->
             event.preventDefault()
             description = Session.get('carsDetailDescription')

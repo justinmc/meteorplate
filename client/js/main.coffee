@@ -27,7 +27,6 @@ Meteor.users.getActiveEmail = () ->
 
 Meteor.startup () ->
     $ ->
-        # Create the backbone router
-        App.router = new Router()
-        Backbone.history.start({pushState: true})
+        # Create the router
+        App.router = new Routes()
 

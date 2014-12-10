@@ -1,4 +1,4 @@
-# Meteor Backbone Boilerplate
+# Meteor Boilerplate
 
 <table>
     <tr>
@@ -27,7 +27,7 @@
     </tr>
 </table>
 
-This is a fork from my old project (https://github.com/justinmc/meteor-backbone-boilerplate)[Meteor Backbone Boilerplate].
+This is a fork from my old project (https://github.com/justinmc/meteor-boilerplate)[Meteor Boilerplate].
 
 This project aims to create a starting point for Meteor projects that want to use a routing system.  Iron Router is used to swap page templates in and out of a container div.  Everything works reactively with Meteor's data binding.
 

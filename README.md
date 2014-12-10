@@ -1,4 +1,4 @@
-# Meteor Boilerplate
+# Meteorplate
 
 <table>
     <tr>
@@ -22,24 +22,24 @@
             Live Demo
         </td>
         <td>
-            <a href="http://backbone-boilerplate.meteor.com/">backbone-boilerplate.meteor.com</a>
+            <a href="http://meteorplate.meteor.com/">meteorplate.meteor.com</a>
         </td>
     </tr>
 </table>
 
-This is a fork from my old project (https://github.com/justinmc/meteor-boilerplate)[Meteor Boilerplate].
+This project aims to create a solid starting point for Meteor projects that want to use a routing system and pages.  Iron Router is used to swap page templates in and out of a container div.  Everything works reactively with Meteor's data binding.
 
-This project aims to create a starting point for Meteor projects that want to use a routing system.  Iron Router is used to swap page templates in and out of a container div.  Everything works reactively with Meteor's data binding.
+This is a fork from an older project [Meteor Boilerplate](https://github.com/justinmc/meteor-boilerplate).
 
 ## Features
 
 Sub-templates render things like the page structure and navbar reactively while routing handles the main page content.  Meteor's account system is used reactively in the navbar, and permissions are used to only allow access to certain pages for users that are logged in.
 
-All of these features are demostrated in the demo, so check it out live at <a href="http://backbone-boilerplate.meteor.com/">backbone-boilerplate.meteor.com</a> or dive into the code to see how it all works.
+All of these features are demostrated in the demo, so check it out live at <a href="http://meteorplate.meteor.com/">meteorplate.meteor.com</a> or dive into the code to see how it all works.
 
 ### Google Analytics
 
-Google Analytics support is also built in and ready to go, courtesy of [this airbnb blog post](http://nerds.airbnb.com/how-to-add-google-analytics-page-tracking-to-57536/).  Checkout the routes at `client/scripts/routes/router.js` to see the implementation and enter your Analytics code.
+Google Analytics support is also built in and ready to go.  Checkout the routes at `client/scripts/routes/routes.js` to see the implementation and enter your Analytics code.
 
 ## Usage
 

@@ -33,7 +33,11 @@ This is a fork from an older project [Meteor Boilerplate](https://github.com/jus
 
 ## Features
 
-Sub-templates render things like the page structure and navbar reactively while routing handles the main page content.  Meteor's account system is used reactively in the navbar, and permissions are used to only allow access to certain pages for users that are logged in.
+*Iron Router* gives the project fully featured routing for a paged app.
+
+*Sub-templates* render things like the page structure and navbar reactively, while routing handles the main page content.
+
+*Permissions with Meteor's account system* is set up and reactive, so internal pages can be hidden from users that aren't logged in, and user data can be rendered in the page structure.
 
 All of these features are demostrated in the demo, so check it out live at <a href="http://meteorplate.meteor.com/">meteorplate.meteor.com</a> or dive into the code to see how it all works.
 
@@ -45,3 +49,6 @@ Google Analytics support is also built in and ready to go.  Checkout the routes 
 
 Just clone the repository, run `meteor` in the root directory, and start hacking in your own project like normal.  All that's provided is a starting point for your projects and a basic demo.
 
+## License 
+
+MIT

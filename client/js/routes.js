@@ -4,7 +4,7 @@
 
 this.Routes = function() {
   // The container of the nav and login component
-  this.headerSelector = "#header";
+  this.headerSelector = ".header";
   this.header = $(this.headerSelector).get(0);
 
   // Render structure templates that don't change on every route change

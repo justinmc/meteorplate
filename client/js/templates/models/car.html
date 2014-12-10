@@ -1,8 +1,8 @@
 <template name="modelCar">
-    <div class="car">
+    <a href="/cars/car/{{_id}}" class="car">
         <span class="car_coolness">{{coolness}}</span>
-        <a class="car_model" href="/cars/car/{{_id}}">{{model}}</a>
+        <span class="car_model" >{{model}}</span>
         <br />
         <span class="car_make">{{make}}</span>
-    </div>
+    </a>
 </template>

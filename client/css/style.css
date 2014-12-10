@@ -7,6 +7,7 @@ a:hover, a:visited:hover {
 }
 a, a:visited {
     color: #505050;
+    text-decoration: none;
 }
 
 html {
@@ -17,48 +18,59 @@ body {
     height: 100%;
 }
 
-#container {
-    width: 948px;
+.container {
+    width: 100%;
     min-height: 100%;
     margin: 0 auto;
     text-align: center;
-    background: #efefef;
+    background: #ffffff;
 }
-    #container #header {
+    .container .header {
         top: 0px;
         height: 110px;
         text-align: center;
         border-bottom: 1px #ffffff solid;
     }
 
-        #container #header h1 {
-            margin-top: 0px;
+        .container .header h1 {
+            margin: 0 auto;
+            font-size: 3em;
         }
 
-        #container #header #navbar-list li {
-            display: inline;
-            padding: 16px;
+        .container .header .navbar-list {
+            padding: 0;
+        }
+
+        .container .header .navbar-list li {
+            display: inline-block;
+            padding: 12px;
             margin: 4px;
-            border: 1px #ffffff solid;
+            width: 120px;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        .container .header .navbar-list li:hover {
+            background-color: rgba(0, 0, 0, 0.6);
         }
 
-        #container #header #login {
-            float: right;
-            position: relative;
-            top: -22px;
-            margin-right: 8px;
+        .container .header .navbar-list li.login {
+            position: absolute;
+            right: 160px;
+            background: transparent;
         }
 
-    #container #content {
+    .container .content {
         text-align: left;
         padding: 12px;
+        max-width: 948px;
+        margin: 32px auto 0 auto;
     }
 
-    #container #footer {
+    .container .footer {
         height: 30px;
         width: inherit;
         bottom: 0px;
         text-align: center;
+        font-weight: bold;
     }
 
 .page_right {
@@ -69,11 +81,15 @@ body {
     list-style: none;
 }
     .car {
+      display: block;
         position: relative;
         width: 180px;
         margin: 12px 0 12px 0;
         padding: 4px;
-        border: 1px #ffffff solid;
+        border: 1px #cfcfcf solid;
+    }
+    .car:hover {
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
         .car_make {
@@ -86,12 +102,28 @@ body {
         .car_coolness {
             position: absolute;
             right: 2px;
-            font-size: 8px;
+            font-size: 0.9em;
+            color: #505050;
+        }
+        .car:hover .car_coolness {
+            color: #afafaf;
         }
 
 code {
     background: #ffffff;
     padding: 8px 8px 8px 40px;
     line-height: 240%;
+}
+
+input, textarea {
+    padding: 7px;
+    border: 1px #cfcfcf solid;
+    margin-bottom: 6px;
+}
+
+button {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px #cfcfcf solid;
 }
 

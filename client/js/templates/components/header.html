@@ -1,31 +1,32 @@
 <template name="componentHeader">
     <h1><a href="/">Meteorplate</a></h1>
-    <div id="navbar">
-        <a href="/">
-            Home
-        </a>
-        &nbsp;|&nbsp;
-        <a href="/colors">
-            Colors
-        </a>
-        &nbsp;|&nbsp;
-        <a href="/cars">
-            Cars
-        </a>
-        {{#if loggedIn}}
-        &nbsp;|&nbsp;
-        <a href="/account">
-            {{#if name}}
-            {{name}}'s
-            {{else}}
-            Your {{name}}
+    <div class="navbar">
+        <ul class="navbar-list">
+            <a href="/">
+                <li>Home</li>
+            </a>
+            <a href="/colors">
+                <li>Colors Example</li>
+            </a>
+            <a href="/cars">
+                <li>Cars Example</li>
+            </a>
+            {{#if loggedIn}}
+            <a href="/account">
+                <li>
+                    {{#if name}}
+                    {{name}}'s
+                    {{else}}
+                    Your {{name}}
+                    {{/if}}
+                    Account
+                </li>
+            </a>
             {{/if}}
-            Account
-        </a>
-        {{/if}}
-    </div>
-    <div id="login">
-        {{> loginButtons}}
+            <li class="login">
+              {{> loginButtons}}
+            </li>
+        </ul>
     </div>
 </template>
 

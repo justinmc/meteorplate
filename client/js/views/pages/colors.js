@@ -21,7 +21,7 @@ Meteor.startup(function() {
 
   Template.colors.helpers({
     colors: function() {
-      return Colors.find();
+      return Colors.find().fetch().reverse();
     },
     colorPending: function() {
       return Session.get('colorsColor');

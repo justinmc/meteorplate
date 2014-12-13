@@ -32,7 +32,7 @@ Meteor.startup(function() {
     },
 
     'input .coolness': function(event, template) {
-      Session.set('carsCoolness', event.target.value);
+      Session.set('carsCoolness', parseInt(event.target.value));
     }
   };
 

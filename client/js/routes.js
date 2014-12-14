@@ -55,7 +55,7 @@ this.Routes.prototype = {
     });
   },
 
-  // Actually changes the page by creating the view and inserting it
+  // Actually changes the page by rendering the template
   go: function (router, template, internal, templateData) {
     if (!template) {
       template = Template.home;

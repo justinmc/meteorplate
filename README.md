@@ -29,7 +29,7 @@
 
 This project aims to create a solid starting point for Meteor projects that want to use a routing system and pages.  Iron Router is used to swap page templates in and out of a container div.  Everything works reactively with Meteor's data binding.
 
-This is a fork from an older project [Meteor Boilerplate](https://github.com/justinmc/meteor-boilerplate).
+This is a fork from an older project [Meteor Backbone Boilerplate](https://github.com/justinmc/meteor-backbone-boilerplate).
 
 ## Features
 

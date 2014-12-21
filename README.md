@@ -6,7 +6,7 @@
             Technologies
         </td>
         <td>
-            <a href="http://www.meteor.com">Meteor</a> 1.01, <a href="http://www.html5boilerplate.com/">HTML5 Boilerplate</a>, and <a href="https://github.com/EventedMind/iron-router">Iron Router</a>
+            <a href="http://www.meteor.com">Meteor</a> 1.02, <a href="http://www.html5boilerplate.com/">HTML5 Boilerplate</a>, and <a href="https://github.com/EventedMind/iron-router">Iron Router</a>
         </td>
     </tr>
     <tr>

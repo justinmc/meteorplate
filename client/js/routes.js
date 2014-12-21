@@ -26,6 +26,7 @@ this.Routes = function() {
     this.next();
   });
 
+  // Configure the 404 page to show when a route isn't found
   Router.configure({
     notFoundTemplate: Template['404']
   });
@@ -34,29 +35,37 @@ this.Routes = function() {
 };
 
 this.Routes.prototype = {
-  // Define all routes
+  /*
+   * Define all routes in Iron Router here
+   */
   define: function() {
     var me = this;
 
     Router.route('/', function () {
-        me.go(this, Template.home);
+        me.render(this, Template.home);
     });
     Router.route('/colors', function () {
-        me.go(this, Template.colors);
+        me.render(this, Template.colors);
     });
     Router.route('/cars', function () {
-        me.go(this, Template.cars);
+        me.render(this, Template.cars);
     });
     Router.route('/cars/car/:id', function () {
-        me.go(this, Template.carsDetail, false, {id: this.params.id});
+        me.render(this, Template.carsDetail, false, {id: this.params.id});
     });
     Router.route('/account', function () {
-        me.go(this, Template.account, true);
+        me.render(this, Template.account, true);
     });
   },
 
-  // Actually changes the page by rendering the template
-  go: function (router, template, internal, templateData) {
+  /*
+   * Actually changes the page by rendering the template
+   * @param {Router} router, the instance of Iron Router to render with
+   * @param {Template} template, the template to render as the page
+   * @param {Boolean} internal, indicates whether the user must be logged in to access this route
+   * @param {Object} templateData, data from the route to set as session data, to be used in the template
+   */
+  render: function (router, template, internal, templateData) {
     if (!template) {
       template = Template.home;
     }
@@ -75,7 +84,26 @@ this.Routes.prototype = {
     }
   },
 
-  // Code to run before any action happens
+  /*
+   * Programmatically navigate to the given route
+   * @param {String} url, the url to route to, or the template name
+   * @param {Object} data, optional
+   * @param {Object} options, optional
+   */
+  go: function(url, data, options) {
+    if (!data) {
+      data = {};
+    }
+    if (!options) {
+      options = {};
+    }
+
+    Router.go(url, data, options);
+  },
+
+  /*
+   * Render any structural templates here that exist on every page
+   */
   renderPermanentTemplates: function() {
     // Create a component view that renders in the page template, on every page
     this.header.innerHTML = '';
